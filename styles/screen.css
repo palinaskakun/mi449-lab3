@@ -1,16 +1,17 @@
 body {
     font-family: Helvetica, sans-serif;
-    color: #EAE8FF;
-    background: #2D3142;
+    background: #a1b2ff;
     padding: 0 40px;
     text-align: center;
+    color: #000000;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 nav {
     margin: 40px auto 0 auto;
-    width: 250px;
+    width: 550px;
     border-radius: 50px;
-    background: #212431;
+    background: #000000;
 }
 
 nav ul {
@@ -27,24 +28,74 @@ nav ul li {
 
 nav ul li a {
     display: inline-block;
-    padding: 20px;
+    padding: 15px;
     color: #EAE8FF;
     text-decoration: none;
     font-size: 1.2em;
 }
 
 h1 {
-    font-size: 8em;
+    font-size: 6em;
     letter-spacing: -2px;
+    color: black
 }
 
-h1 strong {
-    background: rgb(34,193,195);
-    background: linear-gradient(45deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-style: italic;
+    font-weight: lighter;
 }
 
 img.about {
-    opacity: 0.5;
+    opacity: 0.9;
+    margin-right: 50px; 
+}
+
+img.home {
+    border-radius: 60%;
+    min-width: 300px;
+    margin-left: 90px;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    max-width: 50%;
+}
+
+p {
+    font-size: 1.2em;
+    margin: 0;
+    text-align: center;
+    flex-grow: 1;
+    font-weight: lighter;
+}
+
+.custom-hr {
+    border-color: black; 
+}
+
+.about-me {
+    font-size: 20px;
+    text-align: left;
+}
+
+.home-links {
+    text-decoration: none; /* Remove underline */
+    font-weight: bold;
+    color: #000000; /* Set link color */
+    transition: color 0.3s; /* Add transition effect for color change */
+}
+
+.home-links:hover {
+    color: #8a8888; /* Change color on hover */
+}
+
+.blog {
+    margin: 1% 30% 10% 30%;
 }
